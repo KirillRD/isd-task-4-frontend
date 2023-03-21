@@ -63,6 +63,7 @@ export const UserManagement = () => {
   };
 
   const handleSelectionChange = (e: DataTableSelectionChangeEvent<User[]>) => {
+    // @ts-expect-error
     setSelectedUsers(e.value);
   };
 
